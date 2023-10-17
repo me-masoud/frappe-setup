@@ -3,9 +3,17 @@
 ### create new user on ubuntu :
 
     sudo adduser masoud
+<p></p>
+
     sudo usermod -aG sudo masoud
+<p></p>
+
     su - masoud
+<p></p>
+
     sudo whoami
+<p></p>
+
 
 
 ### Version 15/Nightly:
@@ -15,11 +23,23 @@
 
 ### MariaDB 10.6.6+
     sudo apt install software-properties-common -y
+<p></p>
+
     sudo apt autoremove -y
+<p></p>
+
     sudo apt-get update
+<p></p>
+
     sudo apt-get install mariadb-server -y
+<p></p>
+
     sudo mysql_secure_installation
+<p></p>
+
     sudo apt install mariadb-client-10.6
+<p></p>
+
     sudo nano /etc/mysql/my.cnf
 
 ### add thses texts :
@@ -38,8 +58,14 @@
 ### Install Node.js 18
 
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+<p></p>
+
     source ~/.bashrc
+<p></p>
+
     nvm install 18
+<p></p>
+
     node -v
 
 
@@ -51,8 +77,14 @@
 
 ### pip 20+                                       (py dependency manager)
     sudo apt update
+<p></p>
+
     sudo apt install python3-pip -y
+<p></p>
+
     pip3 --version
+<p></p>
+
     sudo apt install python3.10-venv -y
 
 ### wkhtmltopdf (version 0.12.5 with patched qt)  (for pdf generation)
@@ -71,11 +103,17 @@
 
 ### initial frappe :
     cd ~
+<p></p>
+
     bench init frappe-bench
+<p></p>
+
     cd frappe-bench
 
 ### add new site :
     bench new-site mydomain.com
+<p></p>
+
     bench --site mydomain.com add-to-hosts
 
 
@@ -91,7 +129,11 @@ now its accessable on mydomain.com:8000
 ##  setup production:
 
     sudo bench setup production masoud
+<p></p>
+
     sudo bench use mydomain.com
+<p></p>
+
 
     sudo bench restart
 
@@ -102,6 +144,8 @@ now its accessable on mydomain.com:8000
 ### again
 
     sudo bench setup production masoud
+<p></p>
+
     sudo bench use mydomain.com
 
     sudo bench restart
@@ -109,7 +153,11 @@ now its accessable on mydomain.com:8000
 ### how to set ssl
 
     bench config dns_multitenant on
+<p></p>
+
     sudo apt install certbot -y
+<p></p>
+
     sudo -H bench setup lets-encrypt [site-name]
 
 

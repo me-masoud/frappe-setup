@@ -82,6 +82,9 @@
     sudo apt install python3-pip -y
 <p></p>
 
+    sudo apt autoremove
+<p></p>
+
     pip3 --version
 <p></p>
 

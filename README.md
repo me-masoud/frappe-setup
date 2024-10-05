@@ -134,6 +134,7 @@
 now its accessable on mydomain.com:8000
 
 ##  setup production:
+    sudo apt install ansible -y
 
     sudo bench setup production masoud
 <p></p>

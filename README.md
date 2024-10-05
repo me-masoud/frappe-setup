@@ -179,3 +179,12 @@ now its accessable on mydomain.com:8000
 
 ## to see frappe services and jobs :
     supervisorctl status
+
+
+# Install More app :
+    install hr : 
+go to https://github.com/frappe/hrms?tab=readme-ov-file
+
+install erpnext : 
+ bench get-app erpnext
+bench --site sitename install-app erpnext

@@ -98,8 +98,7 @@
 ### NGINX                                         (proxying multitenant sites in production)
 
 ### Frappe bench:
-    sudo apt install pipx
-    pipx install frappe-bench
+    pip install frappe-bench --break-system-packages
 
     or 
 

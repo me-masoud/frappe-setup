@@ -18,7 +18,7 @@
 
 ### Version 15/Nightly:
 #### Python 3.10 or Python 3.11
-    sudo apt install git  python-pip redis-server -y
+    sudo apt install git  python3-pip redis-server -y
 
 
 ### MariaDB 10.6.6+
